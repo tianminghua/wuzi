@@ -1,0 +1,65 @@
+.dialog-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.dialog-content {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.dialog-content h2 {
+  margin: 0 0 1rem 0;
+  color: #333;
+}
+
+.dialog-content p {
+  margin-bottom: 1.5rem;
+  color: #666;
+}
+
+.dialog-content form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.dialog-content input {
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.dialog-content button {
+  padding: 0.75rem;
+  background-color: #3b82f6;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.dialog-content button:hover:not(:disabled) {
+  background-color: #2563eb;
+}
+
+.dialog-content button:disabled {
+  background-color: #94a3b8;
+  cursor: not-allowed;
+} 
