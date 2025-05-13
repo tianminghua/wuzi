@@ -33,7 +33,7 @@ function App() {
   useEffect(() => {
     if (!userName) return;
 
-    const newSocket = io('http://192.168.12.216:3001');
+    const newSocket = io(window.location.origin);
     setSocket(newSocket);
 
     newSocket.emit('userJoined', userName);
